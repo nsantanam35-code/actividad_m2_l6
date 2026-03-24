@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Manipulación DOM - Nataly</title>
+    <style>
+        body { padding: 20px; font-family: sans-serif; }
+        /* Clase que aplicaremos con jQuery */
+        .texto-azul { color: #0056b3; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <h3>Lista de Elementos</h3>
+    <ul id="listaActividad">
+        <li>Primer elemento</li>
+        <li>Segundo elemento</li>
+        <li>Tercer elemento</li>
+    </ul>
+
+    <script src="jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // 1. Cambiar el color de texto de los elementos existentes
+            // Usamos un selector de etiqueta dentro del ID
+            .addClass("texto-azul");
+
+            // 2. Agregar dinámicamente un cuarto elemento
+            .append("<li>Cuarto elemento (agregado con jQuery)</li>");
+            
+            // Aplicamos el estilo también al nuevo elemento para que coincida
+            .addClass("texto-azul");
+        });
+    </script>
+</body>
+</html>

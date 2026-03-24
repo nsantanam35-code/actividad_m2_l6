@@ -1,0 +1,9 @@
+============================================================
+RESPUESTAS TEÓRICAS - M2 L6
+Estudiante: Nataly
+============================================================
+1. jQuery es una librería de JS que facilita la manipulación del DOM y eventos.
+2. Conviene usarlo en proyectos con Bootstrap (<5) o para desarrollo rápido de UI.
+3. Bootstrap 4 depende de jQuery para sus componentes interactivos (modales, etc).
+4. Un plugin es código externo que añade funciones (como carruseles) al sitio.
+============================================================

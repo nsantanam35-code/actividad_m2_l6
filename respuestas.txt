@@ -1,0 +1,21 @@
+============================================================
+ACTIVIDAD M2 L6 - RESPUESTAS TEÓRICAS
+Estudiante: Nataly
+============================================================
+
+1. ¿Qué es jQuery y cuáles son sus principales ventajas?
+Es una biblioteca de JavaScript que simplifica la manipulación del DOM, el manejo de eventos y las animaciones.
+Ventajas: Sintaxis sencilla ("Write less, do more"), compatibilidad entre navegadores y gran cantidad de plugins.
+
+2. ¿En qué casos conviene usar jQuery frente a JavaScript puro?
+Conviene cuando se requiere interactividad rápida, manipulación intensiva del DOM en proyectos legados o cuando el proyecto ya utiliza Bootstrap 4.
+
+3. ¿Qué relación existe entre jQuery y Bootstrap?
+Bootstrap (hasta la versión 4) depende de jQuery para que funcionen sus componentes dinámicos como Modales, Carruseles y Dropdowns.
+
+4. ¿Qué es un plugin y en qué situaciones es recomendable utilizarlo?
+Es un complemento de código que añade funciones específicas. Es recomendable usarlo para ahorrar tiempo en funciones complejas (ej. un calendario o un slider) que ya han sido probadas.
+
+5. Plugin utilizado en la práctica:
+Se integró el Plugin "Modal" de Bootstrap, el cual permite mostrar ventanas emergentes interactivas mediante clases de CSS y activadores de jQuery.
+============================================================

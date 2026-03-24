@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plugin jQuery + Bootstrap - Nataly</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { padding: 50px; background-color: #e9ecef; }
+        .resaltado { color: #28a745; font-weight: bold; }
+        .contenedor { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body>
+
+    <div class="container contenedor">
+        <h2 class="text-primary">Prueba de Plugins: jQuery & Bootstrap</h2>
+        <hr>
+
+        <h4>Lista Dinámica:</h4>
+        <ul id="miLista" class="list-group mb-4">
+            <li class="list-group-item">Tarea 1: Revisar teoría</li>
+            <li class="list-group-item">Tarea 2: Descargar jQuery</li>
+            <li class="list-group-item">Tarea 3: Crear estructura</li>
+        </ul>
+
+        <button id="btnToggle" class="btn btn-warning mb-4">Ocultar lista</button>
+
+        <hr>
+
+        <h4>Componente Plugin:</h4>
+        <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#miModalNataly">
+            Lanzar Plugin Modal
+        </button>
+    </div>
+
+    <div class="modal fade" id="miModalNataly" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">¡Plugin Funcionando!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Este es un <strong>Plugin de Bootstrap</strong> que utiliza jQuery para las animaciones y el control de visibilidad.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // Manipulación DOM (Punto 3)
+            $("#miLista li").addClass("resaltado");
+            $("#miLista").append("<li class='list-group-item resaltado'>Tarea 4: Probar Plugin (Agregado con jQuery)</li>");
+
+            // Evento Click (Punto 4)
+            $("#btnToggle").on("click", function() {
+                $("#miLista").slideToggle();
+                $(this).text($(this).text() === "Ocultar lista" ? "Mostrar lista" : "Ocultar lista");
+            });
+        });
+    </script>
+</body>
+</html>
